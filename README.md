@@ -1,3 +1,36 @@
+# KC Cloud AI Inc — Static Site
+
+This repository contains a simple one-page static site for the KC Cloud AI Inc freelance consultancy. The site is ready to publish on GitHub Pages.
+
+Preview locally
+- Open `index.html` in your browser, or serve with a local static server.
+
+Publish to GitHub Pages (basic)
+1. Create a new repository on GitHub (for example `kc-cloud-ai-inc`).
+2. From your local project folder, run the following commands in `cmd.exe` (Windows):
+
+```bat
+git init
+git add .
+git commit -m "Initial site"
+git branch -M main
+git remote add origin https://github.com\<yourusername>\<your-repo>.git
+git push -u origin main
+```
+
+3. Open your repository on GitHub, go to `Settings` → `Pages`, and under `Source` choose the `main` branch and root (`/`). Save. The site will be published at `https://<yourusername>.github.io/<your-repo>/` shortly.
+
+Notes and options
+- If you prefer to publish from a `docs/` folder, move site files into `docs/` and set `Pages` source to `main` branch → `/docs`.
+- For a custom domain, add a `CNAME` file with your domain and configure DNS. GitHub Pages also supports automatic HTTPS.
+- The file `.nojekyll` is included to avoid Jekyll processing (useful for files that start with `_`).
+
+If you'd like, I can:
+- add a `CNAME` file for a custom domain
+- create a GitHub Actions workflow to deploy automatically to `gh-pages`
+- update the page content with your bio, project links, or contact email
+
+Replace placeholders (`<yourusername>`, `<your-repo>`) with your GitHub information before pushing.
 # KC Cloud AI Inc.
 
 Welcome to the KC Cloud AI Inc. project! This is a simple one-page static website for a freelance software consultancy specializing in cloud and AI solutions.
